@@ -1,0 +1,31 @@
+.header {
+    animation: slideDown 1s ease-out forwards;
+    /* diğer header stilleri... */
+}
+
+@keyframes slideDown {
+    0% {
+        opacity: 0;
+        transform: translateY(-50px);
+    }
+    100% {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Header içindeki metin için ayrı bir animasyon */
+.header h1 {
+    animation: fadeIn 1.2s ease-out forwards;
+}
+
+@keyframes fadeIn {
+    0% {
+        opacity: 0;
+        transform: scale(0.9);
+    }
+    100% {
+        opacity: 1;
+        transform: scale(1);
+    }
+}

@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible"
+    content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>Restaurantlar </title>
+    <link rel="stylesheet" href="styles/style.css">
+</head>
+
+<body>
+    <!--Header section start-->
+ <header class="header">
+ <a href= "#" class="logo">
+ <!--<image src="images/logo.png" alt="logo" />-->   <image src="images/logo.png" alt="logo" />
+ </a>
+ <nav class="navbar">
+  <a href="index.html"  >Anasayfa</a> 
+  <!-- <a href="#" >Hakkında</a> -->
+  <a href="restaurantlarr.html" class=" active " >Restaurantlar</a> 
+  <a href="favoriRestaurantlarim.html" >Favori Restaurantlarım</a> 
+  <a href="#İletişim" >İletişim</a> 
+  <a href="girisyap.html" >Giriş Yap</a> 
+  <a href="kaydol.html" >Kaydol</a> 
+ </nav>
+ <div class="buttons">
+    <button id="search-btn">
+        <i class=" fas fa-search"></i>
+    </button>
+    <div class="search-form">
+        <input type="text" class="search-input" id="search-box" placeholder="Restaurant Ara">
+        <i class=" fas fa-search"></i>
+    </div>
+  <!-- <button> 
+        <i class=" fas fa-shopping-cart"></i>
+    </button>   -->
+
+    <!--<button>
+    <i class=" fas fa-bars"></i>
+</button> belki eklerim 3çizgili menü çubuğu-->
+ </div>
+ </header> 
+ <!--Header section end-->  
+
+  <!--Anasayfa section start
+    <section class="anasayfa">
+        <div class="content">
+            <h3>YEMEK23'E HOŞGELDİNİZ !</h3>
+        <p>
+            Elazığda bulunan restaurantları incelemek, onların karşılaştırmalarını görmek ve yemek sipariş etmek istiyorsanız doğru yerdesiniz.
+        </p>
+        <a href="#" class="btn">Şimdi Başlayın</a>
+        </div>
+    </section>
+   Anasayfa section end-->
+   
+   <!--RESTAURANTLAR section start-->
+    <section class="restaurantlar" id="Restaurantlarım">
+<h1 class="heading">Restaurantlar</h1>
+ <!--Filtreleme Kısmı start -->
+ <!-- Filtrele Butonu -->
+<button id="filter-btn" class="filter-btn">Filtrele</button>
+
+<!-- Filtreleme Kısmı -->
+<div class="filter" id="filter-section" style="display: none;">
+    <h2>Filtrele</h2>
+    <form id="filterForm">
+        <label for="category">Kategori:</label>
+        <select id="category" name="category">
+            <option value="all">Tüm Kategoriler</option>
+            <option value="electronics">Döner</option>
+            <option value="fashion">Kebab</option>
+            <option value="books">Pizza</option>
+        </select>
+
+        <label for="price">Fiyat Aralığı:</label>
+        <input type="range" id="price" name="price" min="0" max="5000" step="100" value="0">
+        <span id="price-display">0</span>
+
+        <label for="rating">Yıldız Derecelendirmesi:</label>
+        <select id="rating" name="rating">
+            <option value="all">Tüm Yıldızlar</option>
+            <option value="5">5 Yıldız</option>
+            <option value="4">4 Yıldız</option>
+            <option value="3">3 Yıldız</option>
+            <option value="2">2 Yıldız</option>
+            <option value="1">1 Yıldız</option>
+        </select>
+
+        <button type="submit">Filtrele</button>
+    </form>
+</div> 
+
+<!--Filtreleme Kısmı end-->
+ <div class="box-container">
+    <div class="box">
+        <div class=" box-head">
+            <img src="images/tavukdunyasi.jpg" alt="tavukdunyasi" width="200">
+            <h3>Tavuk Dünyası</h3>
+            <div class="ücret">Çalışma saatleri= 11:00-21:00</div>
+        </div>
+        <div class="box-bottom"> 
+           <a href="#" class="btn">Favorilere Ekle</a>
+        </div>
+    </div> 
+    <div class="box">
+        <div class=" box-head">
+            <img src="images/efendibeyzadekafeverestoran.jfif" alt="efendibeyzadekafeverestoran" width="200">
+            <h3>Efendi Beyzade Kafe ve Restoran</h3>
+            <div class="ücret">Çalışma saatleri= 12:00-22:00</div>
+        </div>
+        <div class="box-bottom"> 
+           <a href="#" class="btn">Favorilere Ekle</a>
+        </div>
+    </div> 
+    <div class="box">
+        <div class=" box-head">
+            <img src="images/kebabcihalitusta.jpg" alt="halitusta" width="200">
+            <h3>Kebabçı Halit Usta</h3>
+            <div class="ücret">Çalışma saatleri= 12:00-21:00</div>
+        </div>
+        <div class="box-bottom"> 
+           <a href="#" class="btn"> Favorilere Ekle</a>
+        </div>
+    </div> 
+    <div class="box">
+        <div class=" box-head">
+            <img src="images/ensarmangalvadisi.jfif" alt="ensarmangalvadisi" width="200">
+            <h3>Ensar Mangal Vadisi</h3>
+            <div class="ücret">Çalışma saatleri= 09:00-19:00</div>
+        </div>
+        <div class="box-bottom"> 
+           <a href="#" class="btn"> Favorilere Ekle</a>
+        </div>
+    </div> 
+ </div>
+    </section>
+   <!--RESTAURANTLAR section end-->
+
+ <!-- Yorum bölümü start-->
+ <section class="yorum">
+    <h1 class="heading">Müşteri Yorumları</h1>
+ <div class="box-container">
+    <div class="box">
+        <img src="images/quote.png" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quaerat debitis voluptates a. Dignissimos, libero. Provident debitis, maiores qui repellat totam vitae reiciendis atque cumque corrupti, dolorem nisi, quidem culpa.
+            </p>
+            <img src="images/avatar-2.png" alt="avatar"  class="user">
+            <h3>John Becker</h3>
+            <div class="stars">
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars-half-alt"></i>
+            </div>
+    </div>
+    <div class="box">
+        <img src="images/quote.png" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quaerat debitis voluptates a. Dignissimos, libero. Provident debitis, maiores qui repellat totam vitae reiciendis atque cumque corrupti, dolorem nisi, quidem culpa.
+            </p>
+            <img src="images/avatar-2.png" alt="avatar"  class="user">
+            <h3>John Becker</h3>
+            <div class="stars">
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars-half-alt"></i>
+            </div>
+    </div>
+    <div class="box">
+        <img src="images/quote.png" alt="">
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Labore quaerat debitis voluptates a. Dignissimos, libero. Provident debitis, maiores qui repellat totam vitae reiciendis atque cumque corrupti, dolorem nisi, quidem culpa.
+            </p>
+            <img src="images/avatar-2.png" alt="avatar"  class="user">
+            <h3>John Becker</h3>
+            <div class="stars">
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars"></i>
+                <i class="fas fa-stars-half-alt"></i>
+            </div>
+    </div>
+ </div>
+</section>
+ <!--Yorum bölümü end-->
+
+ <!--İletişim start-->
+<section class="iletisim" id="İletişim">
+    <h1 class="heading">İletişim</h1>
+    <div class="row">
+        <iframe class="map" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d778.7173908974846!2d39.220878169592325!3d38.674865645242676!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4076c07b112669d5%3A0x88e06a0e6cd35808!2zxLB6emV0IFBhxZ9hLCBHYXppIENkLiA4LTEyLCAyMzEwMCBFbMOiesSxxJ8gTWVya2V6L0VsYXrEscSf!5e0!3m2!1str!2str!4v1731344533185!5m2!1str!2str" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+         <form>
+            <h3>Mesaj gönder</h3>
+            <div class="inputbox">
+                <i class="fas fa-user"></i>
+                <input type="text" placeholder="isim">
+            </div>
+            <div class="inputbox">
+                <i class="fas fa-envelope"></i>
+                <input type="text" placeholder="mesaj">
+            </div>
+            <div class="inputbox">
+                <i class="fas fa-phone"></i>
+                <input type="number" placeholder="telefon">
+            </div>
+            <input type="submit" class="btn" value=" Şimdi Gönder">
+         </form>
+    </div>
+</section>
+
+ <!-- İletişim end-->
+
+ <!--Footer start-->
+ <section class="footer" >
+    <div class="search">
+        <input type="text"
+        class="search-input" placeholder="Arama Yap">
+        <button class="btn bnt-primary">Arama Yap</button>
+    </div>
+        <div class="share">,
+            <a href="#" class="fab fa-facebook"></a>
+            <a href="#" class="fab fa-instagram"></a>
+            <a href="#" class="fab fa-linkedin"></a>
+            <a href="https://github.com/OmerEfee" class="fab fa-github"></a>
+        </div>
+        <div class="links">
+            <a href="#"  class=" active ">Anasayfa</a> 
+            <a href="#" >Restaurantlar</a> 
+            <a href="#" >Favori Restaurantlarım</a> 
+            <a href="#" >İletişim</a> 
+            <a href="#" >Girişyap/Kaydol</a> 
+        </div>
+
+        <div class="credit">
+            created by <span>Ömer Efe Peltek</span> | all rights deserved
+        </div>
+  
+ </section>
+ <!--Footer end-->
+
+ <!--Filtreleme Kısmı start
+ <div class="filter">
+    <h2>Filtrele</h2>
+    <form id="filterForm">
+        <label for="category">Kategori:</label>
+        <select id="category" name="category">
+            <option value="all">Tüm Kategoriler</option>
+            <option value="electronics">Elektronik</option>
+            <option value="fashion">Moda</option>
+            <option value="books">Kitaplar</option>
+        </select>
+
+        <label for="price">Fiyat Aralığı:</label>
+        <input type="range" id="price" name="price" min="0" max="5000" step="100">
+
+        <label for="rating">Yıldız Derecelendirmesi:</label>
+        <select id="rating" name="rating">
+            <option value="all">Tüm Yıldızlar</option>
+            <option value="5">5 Yıldız</option>
+            <option value="4">4 Yıldız</option>
+            <option value="3">3 Yıldız</option>
+            <option value="2">2 Yıldız</option>
+            <option value="1">1 Yıldız</option>
+        </select>
+
+        <button type="submit">Filtrele</button>
+    </form>
+</div> 
+
+<div id="productList">  -->
+    <!-- Ürünler buraya yüklenecek -->
+</div>
+ <!--Filtreleme Kısmı end-->
+
+ <script src="js/script.js"></script>
+</body>
+</html>
